@@ -18,23 +18,24 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16 md:max-w-3xl'>
+      <main className='flex flex-col items-start justify-center max-w-2xl mx-auto mb-16 md:max-w-3xl'>
         <NavBar/>
         <div className='mx-3 px-3'>
-        <div className='flex flex-row '>
-          <div className='w-4/5'>
-            <div className='TITLE font-bold text-4xl mt-10 md:text-5xl'>Ahmed Abdul Saad</div>
-            <div className=' mt-4 text-gray-500'>Computer Engineering @ American University of Sharjah</div>
-            <div className=' mt-4 text-gray-500 max-w-md '>I love making cool stuff for the web and building machine learning & AI applications. Currently building a MLOps application and learning web dev on the side. Interested in fitness, self-development and basketball.</div>
-          </div>
-          <div className=' PROFILE PICTURE max-w-sm my-10 w-1/3'>
+        <div className='flex flex-col md:flex-row-reverse'>
+          <div className='PROFILE PICTURE flex justify-center items-center max-w-sm w-1/4 md:w-1/3'>
             <img className="rounded-full "src="/sq-photo.jpeg"></img>
           </div>
+          <div className='md:w-4/5'>
+            <div className='TITLE font-bold text-3xl mt-3 md:text-5xl'>Ahmed Abdul Saad</div>
+            <div className='mt-1 text-gray-800 text-lg'>Computer Engineering @ American University of Sharjah</div>
+            <div className='mt-4 text-gray-500 w-full md:max-w-md text-xl'>I love making cool stuff for the web and building machine learning & AI applications. Currently building a MLOps application and learning web dev on the side. Interested in fitness, self-development and basketball.</div>
+          </div>
+          
           
         </div>
         
         </div>
-        <div className='mt-96'><Footer/></div>
+        <div className='mt-96 w-full'><Footer/></div>
         
       </main>
     </>
