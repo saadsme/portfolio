@@ -5,10 +5,10 @@ const NavBar = () => {
   return (
     <div className='flex md:justify-center'>
         <nav className="hidden flex justify-between max-w-2xl text-lg m-6 mb-12 space-x-12 text-gray-700 md:block">
-            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2" href={'/'}>Home</Link>
-            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2" href={'/projects'}>Projects</Link>
-            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2" href={'/blog'}>Blog</Link>
-            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2" href={'/tech'}>Tech</Link>
+            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/'}>Home</Link>
+            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/projects'}>Projects</Link>
+            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/blog'}>Blog</Link>
+            <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/tech'}>Tech</Link>
         </nav>
     
         <div className='HAMBURGER space-y-1.5 m-6 mb-12 md:hidden'>
