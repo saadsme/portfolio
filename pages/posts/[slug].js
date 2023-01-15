@@ -43,7 +43,7 @@ export async function getStaticProps({params}){
 }
 
 export default function BlogPost({post}){
-    return(
+    return(<>
         <div>
             <NavBar/>
             <div className='MAIN CONTENT flex flex-col items-start justify-center w-full max-w-3xl mx-auto mb-16'>
@@ -56,6 +56,6 @@ export default function BlogPost({post}){
             </div>
             
         </div>
-
+        </>
     )
 }
