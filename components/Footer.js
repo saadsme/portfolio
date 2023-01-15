@@ -20,9 +20,10 @@ const Footer = () => {
                         <Link className="underline underline-offset-2 decoration-dotted decoration-1 hover:text-gray-700 underline-solid hover:bg-gray-200 p-1 rounded" href={'mailto:aasaad26@gmail.com'} target="_blank">Email ↗</Link>
                     </div>
                 </div>
-                <div className='space-y-0.5 mx-6 w-full text-gray-500'>
+                <div className='flex flex-col space-y-0.5 mx-6 w-full text-gray-500'>
                     {/*CAN ADD ANY LINKS OR WHATEVER I LIKE HERE*/}
                     <Link className="hover:bg-gray-200 p-1 rounded hover:text-gray-700" href={'/howimadethis'}>How I Made This Website</Link>
+                    <Link className="underline underline-offset-2 decoration-dotted decoration-1 hover:text-gray-700 underline-solid hover:bg-gray-200 p-1 rounded" href={'/docs/cv.pdf'} target="_blank">Resume ↗</Link>
                 </div>
             </div>
         </div>
