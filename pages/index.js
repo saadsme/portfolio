@@ -25,9 +25,9 @@ export default function Home({posts}) {
       </Head>
       <main className='flex flex-col w-full max-w-md mx-auto mb-16 md:max-w-3xl  '>
         <NavBar/>
-        <div className='mx-1  px-3  w-full'>
+        <div className='  px-3  w-full'>
           <section>
-            <div className='flex flex-col md:flex-row-reverse w-full'>
+            <div className='flex flex-col ml-1 md:flex-row-reverse w-full'>
               <div className='PROFILE PICTURE rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
               <Image
               className='rounded-full'
@@ -48,11 +48,11 @@ export default function Home({posts}) {
             <div className='CARDS SECTION flex w-full flex-col space-y-7'>
               <div className='ROW1 flex flex-col justify-center items-center space-y-3 mx-1 md:space-y-0 md:flex-row md:space-x-4 md:hidden'>
                 <ProjectCardMob title="Bug Tracker" desc="A minimal, effecient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' href='https://github.com/xosaad/BugTrackerApp'/>
-                <ProjectCardMob title="MLOps Pipeline" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' href='https://github.com/xosaad/ManageLandingPage'/>
+                <ProjectCardMob title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' href='https://github.com/xosaad/ManageLandingPage'/>
               </div>
               <div className='ROW1 hidden flex-col w-full space-y-4 md:space-y-0 md:block'>
                  <ProjectCard2 title="Bug Tracker" desc="A minimal, effecient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' categ={categs1} href='https://github.com/xosaad/BugTrackerApp'/>
-                <ProjectCard3 title="MLOps Pipeline" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' categ={categs2} href='https://github.com/xosaad/ManageLandingPage'/>
+                <ProjectCard3 title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' categ={categs2} href='https://github.com/xosaad/ManageLandingPage'/>
               </div>
               <Link className='text-lg text-gray-500  decoration-dotted decoration-1 hover:text-gray-800' href='/projects' >See all Projects → </Link>
               
