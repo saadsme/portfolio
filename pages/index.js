@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
@@ -22,13 +23,18 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-      <main className='flex flex-col w-full max-w-sm md:mx-auto mb-16 md:max-w-3xl  '>
+      <main className='flex flex-col w-full max-w-md mx-auto mb-16 md:max-w-3xl  '>
         <NavBar/>
         <div className='mx-1  px-3  w-full'>
           <section>
             <div className='flex flex-col md:flex-row-reverse w-full'>
               <div className='PROFILE PICTURE rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
-                <img className="rounded-full  opacity-90"src="/sq-photo.jpeg"></img>
+              <Image
+              className='rounded-full'
+                src={'/sq-photo.jpeg'}
+                width={1200}
+                height={1200}
+              />
               </div>
               <div className='md:w-4/5'>
                 <div className='TITLE font-bold text-3xl mt-3 md:text-5xl'>Ahmed Abdul Saad</div>

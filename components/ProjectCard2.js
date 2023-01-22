@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,7 +7,12 @@ function ProjectCard2({title, desc, slug, image, categ, href}) {
     <div className='w-full group hover:opacity-70 transition duration-150 ease-out hover:ease-in-out'>
         <Link href={href} target='_blank'>
             <div className='flex mb-12 drop-shadow-md'>
-                <img className='rounded-lg w-1/2' src={image}></img>
+              <Image
+              className='rounded-lg w-1/2'
+                src={image}
+                width={1200}
+                height={1200}
+              />
                 <h1 class="underline underline-offset-2 decoration-dotted decoration-1 absolute text-sm opacity-0 text-grey-900
                 translate-x-40 translate-y-32 group-hover:opacity-100">
                 Read more ↗</h1> 

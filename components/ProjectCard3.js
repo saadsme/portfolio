@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 
 function ProjectCard3({title, desc, slug, image, categ, href}) {
@@ -9,7 +10,12 @@ function ProjectCard3({title, desc, slug, image, categ, href}) {
             <h1 class="underline underline-offset-2 decoration-dotted decoration-1 absolute opacity-0 text-sm text-grey-900
                  translate-y-28 -translate-x-36 flex group-hover:opacity-100">
                 Read more ↗</h1> 
-                <img className='rounded-lg w-1/2' src={image}></img>
+                <Image
+                    className='rounded-lg w-1/2'
+                     src={image}
+                     width={1200}
+                    height={1200}
+                />
                 <div className=' relative flex flex-col justify-center w-full text-left z-9'>
                     <div className='absolute left-0 w-[125%]'>
                         <div className=' text-lg'>Featured Project</div>
