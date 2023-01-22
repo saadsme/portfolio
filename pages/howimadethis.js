@@ -12,7 +12,7 @@ export default function HowIMadeThis(){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-        <div className='flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16'>
+        <div className='flex flex-col justify-center w-full max-w-2xl mx-auto mb-16'>
             <NavBar/>
             <div className="text-5xl font-bold justify-center">THIS PAGE IS UNDER CONSTRUCTION. THANK YOU!</div>
             <div className='mt-96 w-full'><Footer/></div>

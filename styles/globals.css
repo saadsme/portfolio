@@ -5,24 +5,3 @@
 html{
   background-color: rgb(254 254 254);
 }
-
-.POSTCONTENT h1{ /* THIS IS LIKE 4XL */
-  font-size: 2.25rem; /* 36px */
-  line-height: 2.5rem; /* 40px */
-	font-weight: 700;
-  color: rgb(0 0 0);
-}
-
-.POSTCONTENT h2{ /* THIS IS LIKE 3XL */
-  font-size: 1.875rem; /* 30px */
-  line-height: 2.25rem; /* 36px */
-  font-weight: 700;
-  color: rgb(0 0 0);
-}
-
-.POSTCONTENT h3{ /* THIS IS LIKE 2XL */
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
-  font-weight: 700;
-  color: rgb(0 0 0);
-}

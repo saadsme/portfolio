@@ -12,9 +12,45 @@ export default function Tech(){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-        <div className='flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16'>
+        <div className='flex flex-col justify-center w-full max-w-2xl mx-auto mb-16'>
             <NavBar/>
-            <div className="text-5xl font-bold justify-center">Sorry! THIS PAGE IS UNDER CONSTRUCTION. </div>
+            <div className='TITLE font-bold text-4xl mx-6 md:mt-16 md:text-5xl'>Tech</div>
+            <div className='PAGEINTRO text-md text-gray-500 my-5 mx-6'>Hey there! This page shows a list of all the tech products that I have and use regularly.</div>
+            <div className='MAIN-PAGE-SECTION space-y-12'>
+                <div className='SECTION 1 mx-6'>
+                    <h1 className='font-bold text-xl mb-2 text-gray-800'>Daily Tech</h1>
+                    <ul className='ml-5 space-y-3 text-gray-500'>
+                        <li>• iPhone 13 mini</li>
+                        <li>• MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)</li>
+                        <li>• AmazonBasics Felt Laptop Sleeve</li>
+                        <li>• iPad mini 4th Generation with stylus</li>
+                    </ul>
+                </div>
+
+                <div className='MySETUP mx-6 space-y-2 mb-2 text-gray-800'>
+                    <h1 className='font-bold text-xl'>My Setup</h1>
+                    <ul className='ml-5 space-y-3 text-gray-500'>
+                        <li>• IKEA Malm Desk in Black-brown (140x65cm)</li>
+                        <li>• MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)</li>
+                        <li>• BenQ 24inch 1080p Monitor (2475H) </li>
+                        <li>• Anne Pro 2 Mechanical Keyboard with Brown Switches</li>
+                        <li>• Sandisk 1TB SSD with Thunderbolt Speed</li>
+                    </ul>
+                </div>
+
+                <div className='PHOTOGRAPHY mx-6 space-y-2 mb-2 text-gray-800'>
+                    <h1 className='font-bold text-xl'>Photography</h1>
+                    <ul className='ml-5 space-y-3 text-gray-500'>
+                        <li>• Nikon D3100 </li>
+                        <li>• Nikon 18-55mm Kit Lens</li>
+                        <li>• Nikon 70-300mm Zoom Lens</li>
+                        <li>• Basic Amazon Tripod</li>
+                        <li>• Zhiyun Smooth Q Gimbal for Mobiles</li>
+                        <li>• Sandisk 32GB SD Card (x2)</li>
+                    </ul>
+                </div>
+            </div>
+           
             <div className='mt-24 w-full'><Footer/></div>
         </div>
         </>

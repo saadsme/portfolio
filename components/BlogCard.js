@@ -10,7 +10,7 @@ export default function BlogCard({title, author, publishedOn, slug, description}
     return (
         <div>
                 <Link href={'/posts/' + slug}>
-                    <div id="post-card" className='bg-slate-100 rounded-lg max-w-3xl w-3xl p-4 md:max-w-3xl'>
+                    <div id="post-card" className='drop-shadow-md bg-slate-100 rounded-lg max-w-3xl w-3xl p-4'>
                         <div id="title" className='text-2xl font-bold text-left p-1'>
                             {title}
                         </div>
