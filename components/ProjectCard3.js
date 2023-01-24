@@ -8,7 +8,7 @@ function ProjectCard3({title, desc, slug, image, categ, href}) {
         <Link href={href} target='_blank'>
             <div className='flex flex-row-reverse mb-12 drop-shadow-md'>
             <h1 class="underline underline-offset-2 decoration-dotted decoration-1 absolute opacity-0 text-sm text-grey-900
-                 translate-y-28 -translate-x-36 flex group-hover:opacity-100">
+                 translate-y-[7.5rem] -translate-x-36 flex group-hover:opacity-100">
                 Read more ↗</h1> 
                 <Image
                     className='rounded-lg w-1/2'

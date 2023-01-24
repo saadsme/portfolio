@@ -12,14 +12,14 @@ export default function Tech(){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-        <div className='flex flex-col justify-center w-full max-w-2xl mx-auto mb-16'>
+        <div className='flex flex-col justify-center w-full max-w-2xl px-5 mx-auto mb-16'>
             <NavBar/>
-            <div className='TITLE font-bold text-4xl mx-6 md:mt-16 md:text-5xl'>Tech</div>
-            <div className='PAGEINTRO text-md text-gray-500 my-5 mx-6'>Hey there! This page shows a list of all the tech products that I have and use regularly.</div>
+            <div className='TITLE font-bold text-4xl md:mt-16 md:text-5xl'>Tech</div>
+            <div className='PAGEINTRO text-xl text-gray-500 my-5'>Hey there! This page shows a list of all the tech products that I have and use regularly.</div>
             <div className='MAIN-PAGE-SECTION space-y-12'>
-                <div className='SECTION 1 mx-6'>
-                    <h1 className='font-bold text-xl mb-2 text-gray-800'>Daily Tech</h1>
-                    <ul className='ml-5 space-y-3 text-gray-500'>
+                <div className='SECTION 1'>
+                    <h1 className='font-bold text-2xl mb-2 text-gray-800'>Daily Tech</h1>
+                    <ul className='ml-5 text-lg space-y-3 text-gray-500'>
                         <li>• iPhone 13 mini</li>
                         <li>• MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)</li>
                         <li>• AmazonBasics Felt Laptop Sleeve</li>
@@ -27,9 +27,9 @@ export default function Tech(){
                     </ul>
                 </div>
 
-                <div className='MySETUP mx-6 space-y-2 mb-2 text-gray-800'>
-                    <h1 className='font-bold text-xl'>My Setup</h1>
-                    <ul className='ml-5 space-y-3 text-gray-500'>
+                <div className='MySETUP space-y-2 mb-2 text-gray-800'>
+                    <h1 className='font-bold text-2xl'>My Setup</h1>
+                    <ul className='ml-5 text-lg space-y-3 text-gray-500'>
                         <li>• IKEA Malm Desk in Black-brown (140x65cm)</li>
                         <li>• MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)</li>
                         <li>• BenQ 24inch 1080p Monitor (2475H) </li>
@@ -38,9 +38,9 @@ export default function Tech(){
                     </ul>
                 </div>
 
-                <div className='PHOTOGRAPHY mx-6 space-y-2 mb-2 text-gray-800'>
-                    <h1 className='font-bold text-xl'>Photography</h1>
-                    <ul className='ml-5 space-y-3 text-gray-500'>
+                <div className='PHOTOGRAPHY space-y-2 mb-2 text-gray-800'>
+                    <h1 className='font-bold text-2xl'>Photography</h1>
+                    <ul className='ml-5 text-lg space-y-3 text-gray-500'>
                         <li>• Nikon D3100 </li>
                         <li>• Nikon 18-55mm Kit Lens</li>
                         <li>• Nikon 70-300mm Zoom Lens</li>

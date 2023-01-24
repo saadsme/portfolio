@@ -23,11 +23,11 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-      <main className='flex flex-col w-full max-w-md mx-auto mb-16 md:max-w-3xl  '>
+      <main className='flex flex-col w-full max-w-md mx-auto mb-16 px-5 md:max-w-3xl overflow-x-hidden'>
         <NavBar/>
-        <div className='  px-3  w-full'>
+        <div className='  w-full'>
           <section>
-            <div className='flex flex-col ml-1 md:flex-row-reverse w-full'>
+            <div className='flex flex-col md:flex-row-reverse w-full'>
               <div className='PROFILE PICTURE rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
               <Image
               className='rounded-full'
@@ -46,7 +46,7 @@ export default function Home({posts}) {
           <section className='mt-8 w-full'>
             <div className='text-2xl font-bold w-full md:text-3xl mb-3'>Projects</div>
             <div className='CARDS SECTION flex w-full flex-col space-y-7'>
-              <div className='ROW1 flex flex-col justify-center items-center space-y-3 mx-1 md:space-y-0 md:flex-row md:space-x-4 md:hidden'>
+              <div className='ROW1 flex flex-col justify-center items-center space-y-3 md:space-y-0 md:flex-row md:space-x-4 md:hidden'>
                 <ProjectCardMob title="Bug Tracker" desc="A minimal, effecient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' href='https://github.com/xosaad/BugTrackerApp'/>
                 <ProjectCardMob title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' href='https://github.com/xosaad/ManageLandingPage'/>
               </div>
@@ -54,9 +54,10 @@ export default function Home({posts}) {
                  <ProjectCard2 title="Bug Tracker" desc="A minimal, effecient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' categ={categs1} href='https://github.com/xosaad/BugTrackerApp'/>
                 <ProjectCard3 title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' categ={categs2} href='https://github.com/xosaad/ManageLandingPage'/>
               </div>
+              </div>
               <Link className='text-lg text-gray-500  decoration-dotted decoration-1 hover:text-gray-800' href='/projects' >See all Projects → </Link>
               
-            </div>
+            
           </section>
           <section>
           <div className='my-8 font-bold text-3xl'>Experience</div>

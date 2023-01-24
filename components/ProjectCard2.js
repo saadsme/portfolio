@@ -14,7 +14,7 @@ function ProjectCard2({title, desc, slug, image, categ, href}) {
                 height={1200}
               />
                 <h1 class="underline underline-offset-2 decoration-dotted decoration-1 absolute text-sm opacity-0 text-grey-900
-                translate-x-40 translate-y-32 group-hover:opacity-100">
+                translate-x-36 translate-y-28 group-hover:opacity-100">
                 Read more ↗</h1> 
                 <div className=' relative flex flex-col 
                   justify-center w-full text-right'>
