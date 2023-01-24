@@ -58,12 +58,12 @@ export default function BlogPost({post}){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-        <div>
+        <div className='px-5 mx-auto overflow-x-hidden'>
             <NavBar/>
-            <div className='MAIN CONTENT flex flex-col items-start justify-center md:max-w-3xl w-full  mx-auto mb-16'>
-                <h1 className='text-4xl font-bold mx-8 mt-5 md:mt-0 md:text-5xl'>{post.title}</h1>
-                <p className='text-gray-500 py-3 mx-8'>{toDate(post.publishedOn)}</p>
-                <div className='prose mx-8 space-y-8 text-gray-500 leading-relaxed text-lg max-w-xs md:max-w-3xl' 
+            <div className='MAIN CONTENT flex flex-col items-start mx-auto justify-center md:max-w-3xl w-full mb-16'>
+                <h1 className='text-3xl max-w-sm font-bold mt-5 md:mt-0 md:text-5xl'>{post.title}</h1>
+                <p className='text-gray-500 py-3'>{toDate(post.publishedOn)}</p>
+                <div className='prose space-y-8 text-gray-500 leading-relaxed text-lg w-full max-w-sm md:max-w-3xl' 
                     dangerouslySetInnerHTML={{__html: post.content.html}}
                 ></div>
                 <div className='mt-12 w-full'><Footer/></div>
