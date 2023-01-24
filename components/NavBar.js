@@ -2,9 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 import {useState} from 'react'
 
-const NavBar = () => {
+const NavBar = ({openProp}) => {
 
-  let [open,setOpen] = useState(false)
+  let [open,setOpen] = useState(openProp)
+
   return (
     <>
     <div className='flex justify-between items-center my-6 md:m-0 md:hidden' onClick={()=>setOpen(!open)}>
@@ -38,5 +39,10 @@ const NavBar = () => {
     </>
   )
 }
+
+NavBar.defaultProps = {
+  openProp: false,
+  
+};
 
 export default NavBar
