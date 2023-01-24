@@ -12,7 +12,7 @@ export default function Tech(){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-        <div className='flex flex-col justify-center w-full max-w-2xl px-5 mx-auto mb-16'>
+        <div className='flex flex-col justify-center w-full max-w-2xl px-5 mx-auto mb-16 overflow-x-hidden'>
             <NavBar/>
             <div className='TITLE font-bold text-4xl md:mt-16 md:text-5xl'>Tech</div>
             <div className='PAGEINTRO text-xl text-gray-500 my-5'>Hey there! This page shows a list of all the tech products that I have and use regularly.</div>

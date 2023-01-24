@@ -48,7 +48,7 @@ export default function Blog({posts}){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         </Head>
-        <div className='flex flex-col justify-center w-full px-5 max-w-2xl mx-auto mb-16'>
+        <div className='flex flex-col justify-center w-full px-5 max-w-2xl mx-auto mb-16 overflow-x-hidden'>
             <NavBar/>
             <div className='TITLE font-bold text-4xl  md:mt-16 md:text-5xl'>Blog</div>
             <div className='BLOGINTRO text-lg md:text-md text-gray-500 my-5'>Hey there! Welcome to my blog. I write about tech, web dev, life, fitness and anything else about life. I usually write up articles whenever I see something that could help other people who are in a situation like me.</div>
