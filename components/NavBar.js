@@ -19,8 +19,8 @@ const NavBar = () => {
                 </button>
             </div>
         </div>
-        <div className=" flex-row justify-between max-w-3xl md:my-12 mx-auto mb-8 w-full text-gray-700 md:flex">
-            <div className={`flex flex-col md:justify-start md:items-center md:flex-row pt-6 md:pt-0 text-lg space-y-2 md:space-y-0 md:space-x-12 absolute w-[94%] max-w-md md:pl-0 pl-9 transition-all duration-500 md:static bg-gray-200 md:bg-white rounded-2xl md:z-auto z-[1000] pb-8 md:pb-0 ${open ? 'top-20' : 'top-[-490px]'}`}>
+        <div className=" flex-row justify-between max-w-3xl md:w-full md:my-12 mx-auto mb-8  text-gray-700 md:flex">
+            <div className={`flex flex-col md:justify-start md:items-center md:flex-row pt-6 md:pt-0 text-lg space-y-2 md:space-y-0 md:space-x-12 absolute md:pl-0 pl-9 transition-all duration-500 md:static bg-gray-200 md:bg-white rounded-2xl md:z-auto z-[1000] pb-8 md:pb-0  left-5 right-5 ${open ? 'top-20' : 'top-[-490px]'}`}>
               <Link className="hover:bg-gray-200 border-spacing-1 rounded md:p-1 md:px-0 hover:text-gray-900" href={'/'}>Home</Link>
               {//<Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/projects'}>Projects</Link>
               }
