@@ -6,7 +6,7 @@ const Footer = () => {
   return (
         <div className='mx-auto'>
             <span className="block h-0.5 max-w-sm bg-gray-300 mb-5 md:max-w-3xl"></span>
-            <div className='flex flex-col justify-center  md:flex-row md:justify-between md:px-24'>
+            <div className='flex flex-col justify-center  md:flex-row md:justify-between md:px-48'>
                     <div className='flex flex-col space-y-0.5 justify-center items-center mb-3 md:justify-start md:items-start text-gray-500'>
                         <Link className="hover:bg-gray-200 p-1 rounded hover:text-gray-700 "  href={'/'}>Home</Link>
                         {//<Link className="hover:bg-gray-200 p-1 rounded hover:text-gray-700 "  href={'/projects'}>Projects</Link>
