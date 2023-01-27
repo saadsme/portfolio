@@ -45,17 +45,18 @@ export default function Home({posts}) {
           </section>
           <section className='mt-8 w-full'>
             <div className='text-2xl font-bold w-full md:text-3xl mb-3'>Projects</div>
-            <div className='CARDS SECTION flex w-full flex-col space-y-7'>
+            <div className='CARDS SECTION flex w-full flex-col space-y-4'>
               <div className='ROW1 flex flex-col justify-center items-center space-y-3 md:space-y-0 md:flex-row md:space-x-4 md:hidden'>
                 <ProjectCardMob title="Bug Tracker" desc="A minimal, effecient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' href='https://github.com/xosaad/BugTrackerApp'/>
                 <ProjectCardMob title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' href='https://github.com/xosaad/ManageLandingPage'/>
               </div>
               <div className='ROW1 hidden flex-col w-full space-y-4 md:space-y-0 md:block'>
-                 <ProjectCard2 title="Bug Tracker" desc="A minimal, effecient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' categ={categs1} href='https://github.com/xosaad/BugTrackerApp'/>
+                <ProjectCard2 title="Bug Tracker" desc="A minimal, effecient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' categ={categs1} href='https://github.com/xosaad/BugTrackerApp'/>
                 <ProjectCard3 title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' categ={categs2} href='https://github.com/xosaad/ManageLandingPage'/>
               </div>
+              <Link className='text-lg text-gray-500  decoration-dotted decoration-1 hover:text-gray-800' href='https://www.github.com/xosaad' target='_blank' >See all Projects → </Link>
+              
               </div>
-              <Link className='text-lg text-gray-500  decoration-dotted decoration-1 hover:text-gray-800' href='/projects' >See all Projects → </Link>
               
             
           </section>

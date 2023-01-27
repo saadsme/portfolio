@@ -66,6 +66,7 @@ export default function BlogPost({post}){
                 <div className='prose space-y-8 text-gray-500 leading-relaxed text-lg w-full max-w-sm md:max-w-3xl' 
                     dangerouslySetInnerHTML={{__html: post.content.html}}
                 ></div>
+                
                 <div className='mt-12 w-full'><Footer/></div>
             </div>
             
