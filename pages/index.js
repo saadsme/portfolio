@@ -31,7 +31,7 @@ export default function Home({posts}) {
           <section>
             <div className='flex flex-col md:flex-row-reverse w-full'>
               <div className='PROFILE PICTURE rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
-              <Image
+              <Image 
               className='rounded-full'
                 src={'/sq-photo.jpeg'}
                 width={1200}
@@ -65,7 +65,7 @@ export default function Home({posts}) {
           <section>
           <div className='my-8 font-bold text-3xl'>Experience</div>
             <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all bg-gradient-to-l from-gray-200 to-gray-300 hover:animate-pulse">
-              <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investments" HighLightstrong={'Internship Highlights'} HighLights={"Built Web Apps with React and Strapi CMS, Practised Agile workflows" }/>
+              <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" HighLightstrong={'Internship Highlights'} HighLights={"Built Web Apps with React and Strapi CMS, Practised Agile workflows" }/>
           </div>
         </section>
           <section>
