@@ -22,7 +22,17 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        
       </Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NQ46PQ69Q"></script>
+        {
+          
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+          gtag('config', 'G-7NQ46PQ69Q');
+          
+        }
       <main className='flex flex-col w-full max-w-md mx-auto mb-16 px-5 md:max-w-3xl overflow-x-hidden' onClick={()=>open=(open?open:!open) }>
         <NavBar open={open}/>
         <div className='w-full'>
