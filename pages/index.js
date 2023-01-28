@@ -17,8 +17,8 @@ export default function Home({posts}) {
   return (
     <>
       <Head>
-        <title>Home | Ahmed Saad</title>
-        <meta name="description" content="Ahmed Saad's Website & Blog" />
+        <title>Home | Ahmed Abdul Saad</title>
+        <meta name="description" content="Ahmed Abdul Saad's Website & Blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
