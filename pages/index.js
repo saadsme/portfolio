@@ -14,6 +14,14 @@ export default function Home({posts}) {
   let open=false;
   var categs1 = ['Android' , 'Java', 'Firebase', 'APIs']
   var categs2 = ['Tailwind CSS' , 'HTML', 'Javascript']
+  var bulletsExp1 = ['Developed an e-commerce web app using ReactJS and APIs built on Strapi.' 
+                  ,'Tested websites and applications leading to a decrease in bugs by 70% using software testing methods.'
+                  ,'Demonstrated strong technical skills in database administration using MariaDB, and proficiency in multiple content management systems such as Strapi and HCL Dx.'
+                  ,'Practised rapid software development using the Agile / Scrum lifecycle.'
+                ]
+ var bulletsEdu1 = ['Major Electives: Neural Networks & Deep Learning, ML, Mobile App Dev, VR/AR' 
+                  ,'Awards: Outstanding Student Scholarship Award, Hamid Jafar Scholarship Award, Undergraduate Research Grant Award'
+                ]
   return (
     <>
       <Head>
@@ -65,13 +73,14 @@ export default function Home({posts}) {
           <section>
           <div className='my-8 font-bold text-3xl'>Experience</div>
             <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all bg-gradient-to-l from-gray-200 to-gray-300 hover:animate-pulse">
-              <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" HighLightstrong={'Internship Highlights'} HighLights={"Built Web Apps with React and Strapi CMS, Practised Agile workflows" }/>
+              <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" points={bulletsExp1}/>
           </div>
         </section>
           <section>
           <div className='my-8 font-bold text-3xl'>Education</div>
             <div class=" p-7 rounded-2xl bg-gradient-to-r from-gray-200 to-gray-300 w-full transition-all">
-              <BasicCard title="BSc Computer Engineering" date="May 2023" company="American University of Sharjah" HighLightstrong={'Course Highlights'} HighLights={"Neural Networks, Machine Learning, Mobile App Development, Software Engineering" }/>
+              
+              <BasicCard title="BSc Computer Engineering" date="May 2023" company="American University of Sharjah" points={bulletsEdu1}/>
             </div>
         </section>
         </div>

@@ -1,7 +1,8 @@
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
 import Head from 'next/head'
-
+import ProjectCardLarge from "../components/ProjectCardLarge";
+var categs1 = ['Android' , 'Java', 'Firebase', 'APIs']
 export default function Projects(){
     return(
         <>
@@ -12,9 +13,16 @@ export default function Projects(){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-        <div className='flex flex-col justify-center w-full max-w-2xl mx-auto mb-16'>
+        <div className='flex flex-col justify-center w-full max-w-4xl mx-auto mb-16'>
             <NavBar/>
-            <div className="text-5xl font-bold justify-center">THIS PAGE IS UNDER CONSTRUCTION. THANK YOU!</div>
+            <div className="w-full">
+
+            <ProjectCardLarge title="Hello" desc="bello" slug='' image='' categ={categs1} href=''/>        
+
+
+
+
+            </div>
             <div className='mt-24 w-full'><Footer/></div>
         </div>
         </>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BasicCard({title, date, company, HighLightstrong, HighLights}) {
+function BasicCard({title, date, company,points}) {
   return (
     <div>
         <div class="flex items-center">
@@ -12,9 +12,14 @@ function BasicCard({title, date, company, HighLightstrong, HighLights}) {
       <p class="text-lg">
         {company}
       </p>
-      <p class="text-md mt-1">
-        <strong>{HighLightstrong}:</strong> {HighLights}
-      </p>
+      <ul class=" mt-1 px-3 list-disc">
+      { 
+        points.map((cat) => (
+          <li className='m-1 list-disc'>{cat}</li>
+          )
+          )}
+        
+      </ul>
     </div>
   </div></div>
   )

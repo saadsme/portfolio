@@ -15,7 +15,7 @@ const NavBar = ({openProp}) => {
                 <span className="block h-0.5 w-5 bg-gray-600"></span>
         </div>
         <div class="md:hidden">
-                <button type="button" class='group flex max-w-md w-full bg-gradient-to-r from-indigo-400 via-pink-400 to-yellow-400 hover:from-indigo-600 hover:via-pink-600 hover:to-red-600 focus:outline-none text-lg shadow-md rounded-full mx-auto p-2'>
+                <button type="button" className='group flex max-w-md w-full bg-gradient-to-r from-indigo-400 via-pink-400 to-yellow-400 hover:from-indigo-600 hover:via-pink-600 hover:to-red-600 focus:outline-none text-lg shadow-md rounded-full mx-auto p-2'>
                   <Link className=" underline-offset-2 decoration-dotted decoration-1 text-gray-900 group-hover:text-gray-100 px-3 underline-solid" href={'/docs/cv.pdf'} target="_blank">Resume ↗</Link>     
                 </button>
             </div>
@@ -23,8 +23,8 @@ const NavBar = ({openProp}) => {
         <div className=" flex-row justify-between max-w-3xl md:w-full md:my-12 mx-auto mb-8  text-gray-700 md:flex">
             <div className={`flex flex-col  md:justify-start md:items-center md:flex-row md:pt-0 text-lg space-y-2 md:space-y-0 md:mr-6 absolute md:pl-0 pl-6 transition-all duration-250 md:static bg-gray-200 md:bg-white rounded-2xl md:z-auto z-[1000] py-4 md:pb-0  left-5 right-5 ${open ? 'top-20' : 'top-[-490px]'}`}>
               <Link className="hover:bg-gray-200 border-spacing-1 rounded md:py-1 md:px-2 md:mr-6  hover:text-gray-900 " href={'/'}>Home</Link>
-              {//<Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/projects'}>Projects</Link>
-              }
+              {/* <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/projects'}>Projects</Link>
+              */}
               <Link className="hover:bg-gray-200 border-spacing-1 rounded md:py-1 md:px-2 md:mr-6  hover:text-gray-900" href={'/blog'}>Blog</Link>
               <Link className="hover:bg-gray-200 border-spacing-1 rounded md:py-1 md:px-2 md:mr-6  hover:text-gray-900" href={'/tech'}>Tech</Link>
             </div>
