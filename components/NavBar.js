@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import{SunIcon ,MoonIcon} from "@heroicons/react/solid";
 import {useTheme} from "next-themes";
 
@@ -8,23 +8,26 @@ const NavBar = ({openProp}) => {
 
   let [open,setOpen] = useState(openProp)
   const {systemTheme , theme, setTheme} = useTheme ();
+  const [initialThemeLoaded, setInitialThemeLoaded] = useState(false);
+  useEffect(() => {
+    // Listen for initial theme loaded event
+    setInitialThemeLoaded(true);
+  }, []);
 
-      const renderThemeChanger= () => {
 
-          const currentTheme = theme === "system" ? systemTheme : theme ;
+      const renderThemeChanger = () => {
+    const currentTheme = initialThemeLoaded ? (theme === "system" ? systemTheme : theme) : "dark";
 
-          if(currentTheme ==="dark"){
-            return (
-              <SunIcon className="w-7 h-7  text-slate-200 " role="button" onClick={() => setTheme('light')} />
-            )
-          }
-
-          else {
-            return (
-              <MoonIcon className="w-7 h-7 text-gray-900 " role="button" onClick={() => setTheme('dark')} />
-            )
-          }
-       };
+    if (currentTheme === "dark") {
+      return (
+        <SunIcon className="w-7 h-7 text-slate-200" role="button" onClick={() => setTheme('light')} />
+      );
+    } else {
+      return (
+        <MoonIcon className="w-7 h-7 text-gray-900" role="button" onClick={() => setTheme('dark')} />
+      );
+    }
+  };
   return (
     <>
     <div className='dark:bg-gray-800 flex justify-between items-center my-6 md:m-0 md:hidden' >
@@ -33,7 +36,7 @@ const NavBar = ({openProp}) => {
                 <span className="block h-0.5 w-5 bg-gray-600 dark:bg-gray-300 "></span>
                 <span className="block h-0.5 w-5 bg-gray-600 dark:bg-gray-300"></span>
         </div>
-        <div class="md:hidden flex items-center space-x-2">
+        <div className="md:hidden flex items-center space-x-2">
                 <div className='bg-gray-300 dark:bg-gray-700 rounded-2xl p-1 '>{renderThemeChanger()}</div>
                 <button type="button" className='group flex max-w-md w-full bg-gradient-to-r from-indigo-400 via-pink-400 to-yellow-400 hover:from-indigo-600 hover:via-pink-600 hover:to-red-600 focus:outline-none text-lg shadow-md rounded-full mx-auto p-2'>
                   <Link className=" underline-offset-2 decoration-dotted decoration-1 text-gray-900 group-hover:text-gray-100 px-3 underline-solid select-none" href={'/docs/cv.pdf'} target="_blank">Resume ↗</Link>     
@@ -52,9 +55,7 @@ const NavBar = ({openProp}) => {
             <div className='flex flex-row md:space-x-3 md:items-center'>
               <div className='bg-gray-300 dark:bg-gray-700 rounded-xl p-1 hidden md:block'>{renderThemeChanger()}</div>
               <button type="button" className=' LARGE-SCREEN-RESUMEBUTTON md:whitespace-nowrap text-lg py-2 px-5 hidden md:flex group bg-gradient-to-r from-indigo-400 via-pink-400 to-yellow-400 hover:from-indigo-600 hover:via-pink-600 hover:to-red-600 focus:outline-none  shadow-md rounded-full'>
-                  <Link className="underline-offset-2 decoration-dotted decoration-1 text-gray-900 group-hover:text-gray-100 md:text-lg underline-solid Class
-Properties
-select-none" href={'/docs/cv.pdf'} target="_blank">Resume ↗</Link>     
+                  <Link className="underline-offset-2 decoration-dotted decoration-1 text-gray-900 group-hover:text-gray-100 md:text-lg underline-solid select-none" href={'/docs/cv.pdf'} target="_blank">Resume ↗</Link>     
               </button>
             </div>
         </div>

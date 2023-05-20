@@ -2,7 +2,27 @@ import {GraphQLClient, gql} from 'graphql-request'
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import Head from 'next/head'
+import HTMLReactParser from 'html-react-parser';
 
+const HTMLRenderer = ({ htmlContent }) => {
+    const parseOptions = {
+      replace: (domNode) => {
+        if (domNode.name === 'h1' || domNode.name === 'h2' || domNode.name === 'h3') {
+          domNode.attribs = {
+            ...domNode.attribs,
+            className: 'dark:text-gray-300 text-gray-800',
+          };
+        } else if (domNode.attribs && !domNode.attribs.class) {
+          domNode.attribs = {
+            ...domNode.attribs,
+            className: 'dark:text-gray-300',
+          };
+        }
+      },
+    };
+  
+    return <div>{HTMLReactParser(htmlContent, parseOptions)}</div>;
+  };
 const graphcms = new GraphQLClient("https://api-ap-south-1.hygraph.com/v2/clckiz8mj1fr101ukd1cqfzkm/master");
 
 const QUERY = gql`
@@ -50,9 +70,10 @@ const toDate = (dateStr) => {
   }
 
 export default function BlogPost({post}){
+    const pageTitle = HTMLReactParser(post.title).toString();
     return(<>
     <Head>
-        <title>{post.title} | Ahmed Saad</title>
+        <title>{pageTitle} | Ahmed Saad</title>
         <meta name="description" content={post.desciption} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -60,12 +81,14 @@ export default function BlogPost({post}){
       </Head>
         <div className='px-5 mx-auto overflow-x-hidden'>
             <NavBar/>
-            <div className='MAIN CONTENT flex flex-col items-start mx-auto justify-center md:max-w-3xl w-full mb-16'>
-                <h1 className='text-3xl max-w-sm font-bold mt-5 md:mt-0 md:text-5xl'>{post.title}</h1>
+            <div className='MAIN CONTENT flex flex-col items-start mx-auto justify-center  max-w-md md:max-w-3xl w-full mb-16'>
+                <h1 className='text-3xl md: font-bold mt-5 md:mt-0 md:text-5xl'>{pageTitle}</h1>
                 <p className='text-gray-500 py-3 dark:text-gray-300'>{toDate(post.publishedOn)}</p>
-                <div className='prose space-y-8 text-gray-500 leading-relaxed text-lg w-full  md:max-w-3xl dark:text-gray-300' 
-                    dangerouslySetInnerHTML={{__html: post.content.html}}
-                ></div>
+                <div
+                    className="prose space-y-8 text-gray-500 leading-relaxed text-lg w-full md:max-w-3xl dark:text-gray-300"> 
+                    <HTMLRenderer className="dark:text-gray-300" htmlContent={post.content.html} />
+                </div>
+
                 
                 <div className='mt-12 w-full'><Footer/></div>
             </div>
