@@ -62,8 +62,8 @@ export default function BlogPost({post}){
             <NavBar/>
             <div className='MAIN CONTENT flex flex-col items-start mx-auto justify-center md:max-w-3xl w-full mb-16'>
                 <h1 className='text-3xl max-w-sm font-bold mt-5 md:mt-0 md:text-5xl'>{post.title}</h1>
-                <p className='text-gray-500 py-3'>{toDate(post.publishedOn)}</p>
-                <div className='prose space-y-8 text-gray-500 leading-relaxed text-lg w-full max-w-sm md:max-w-3xl' 
+                <p className='text-gray-500 py-3 dark:text-gray-300'>{toDate(post.publishedOn)}</p>
+                <div className='prose space-y-8 text-gray-500 leading-relaxed text-lg w-full  md:max-w-3xl dark:text-gray-300' 
                     dangerouslySetInnerHTML={{__html: post.content.html}}
                 ></div>
                 

@@ -16,14 +16,14 @@ function ProjectCard3({title, desc, slug, image, categ, href}) {
                      width={1200}
                     height={1200}
                 />
-                <div className=' relative flex flex-col justify-center w-full text-left z-9'>
+                <div className=' relative flex flex-col justify-center w-full text-left z-9  '>
                     <div className='absolute left-0 w-[125%]'>
                         <div className=' text-lg'>Featured Project</div>
-                        <div className='font-bold text-3xl'>{title}</div>
-                        <div className='mt-4 rounded-lg  text-gray-800 text-md bg-gradient-to-r from-gray-200 to-gray-300 p-7 '>{desc}</div>
-                                   <div className='flex'> { 
+                        <div className='font-bold text-3xl '>{title}</div>
+                        <div className='mt-4 rounded-lg  text-gray-800 text-md dark:bg-gray-700 dark:text-gray-100 bg-gray-300 p-7 '>{desc}</div>
+                                   <div className='flex '> { 
                         categ.map((cat) => (
-                            <div className='bg-orange-200 text-sm italic rounded-full m-1 px-3 py-1 mt-2 text-center '>{cat}</div>
+                            <div className='bg-orange-200 dark:bg-orange-600 text-sm italic rounded-full m-1 px-3 py-1 mt-2 text-center '>{cat}</div>
                         )
                         )}
                         </div>

@@ -13,9 +13,9 @@ function ProjectCardMob({title, desc, slug, image, href}) {
                     height={1200}
                 />
           
-        <div className='bg-gray-100 rounded-b-lg  p-5 w-full'>
+        <div className='bg-gray-100  dark:bg-gray-700 rounded-b-lg  p-5 w-full  dark:text-gray-300'>
             <h1 className='font-bold text-2xl'>{title}</h1>
-            <div className='text-gray-800'>{desc}</div>
+            <div className='text-gray-800  dark:text-gray-300' >{desc}</div>
         </div>
         </Link>
     </div>

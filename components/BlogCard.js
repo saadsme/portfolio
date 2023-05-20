@@ -10,14 +10,14 @@ export default function BlogCard({title, author, publishedOn, slug, description}
     return (
         <div>
                 <Link href={'/posts/' + slug}>
-                    <div id="post-card" className='drop-shadow-md bg-slate-100 rounded-lg max-w-3xl w-3xl p-4'>
-                        <div id="title" className='text-2xl font-bold text-left p-1'>
+                    <div id="post-card" className='drop-shadow-md bg-slate-100 dark:bg-slate-700 rounded-lg max-w-3xl w-3xl p-4'>
+                        <div id="title" className='text-2xl font-bold text-left p-1 dark:text-gray-100'>
                             {title}
                         </div>
-                        <div id="publish" className='text-md text-gray-500 text-color p-1'>
+                        <div id="publish" className='text-md text-gray-500 text-color p-1 dark:text-gray-300'>
                             {toDate(publishedOn)}
                         </div>
-                        <div id="desc" className='text-md text-gray-500 text-left text-color p-1'>
+                        <div id="desc" className='text-md text-gray-500 text-left text-color p-1 dark:text-gray-300'>
                             {description}
                         </div>
                     </div>

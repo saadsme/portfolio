@@ -19,12 +19,12 @@ function ProjectCard2({title, desc, slug, image, categ, href}) {
                 <div className=' relative flex flex-col 
                   justify-center w-full text-right'>
                     <div className='absolute right-0 w-[125%]'>
-                        <div className='  text-gray-800 text-lg'>Featured Project</div>
+                        <div className='  text-gray-800 text-lg dark:text-gray-100'>Featured Project</div>
                         <div className='font-bold text-3xl'>{title}</div>
-                        <div className='mt-4 rounded-lg  text-gray-800 text-md bg-gradient-to-l from-gray-200 to-gray-300 p-7 '>{desc}</div>
-                                   <div className='flex justify-end'> { 
+                        <div className='mt-4 rounded-lg text-gray-800  text-md dark:bg-gray-700 dark:text-gray-100 bg-gray-300 p-7 '>{desc}</div>
+                        <div className='flex justify-end'> { 
                         categ.map((cat) => (
-                            <div className='bg-violet-300 text-sm italic rounded-full m-1 px-3 py-1 mt-2 text-center '>{cat}</div>
+                            <div className='bg-violet-300 dark:bg-violet-600 text-sm italic rounded-full m-1 px-3 py-1 mt-2 text-center '>{cat}</div>
                         )
                         )}
                         </div>
