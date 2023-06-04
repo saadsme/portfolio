@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
 import Head from 'next/head'
-import ProjectCardLarge from "../components/ProjectCardLarge";
+import ProjectCardLarge from "../components/legacy/ProjectCardLarge";
 var categs1 = ['Android' , 'Java', 'Firebase', 'APIs']
 export default function Projects(){
     return(

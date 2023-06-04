@@ -3,12 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import ProjectCard from '../components/ProjectCardMob';
-import ProjectCard2 from '../components/ProjectCard2';
-import ProjectCard3 from '../components/ProjectCard3';
-import ProjectCardMob from '../components/ProjectCardMob';
+
 import BasicCard from '../components/BasicCard';
 import BlogCard from '../components/BlogCard';
+import { ManageCard } from '../components/ManageCard';
+import { BugTrackerCard } from '../components/BugTrackerCard';
+import { PortfolioCard } from '../components/PortfolioCard';
 
 export default function Home({posts}) {
   let open=false;
@@ -33,7 +33,7 @@ export default function Home({posts}) {
         
       </Head>
       
-      <main className='flex flex-col w-full max-w-md mx-auto px-5 md:max-w-3xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
+      <main className='flex flex-col w-full max-w-md mx-auto px-5 md:max-w-4xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
         <NavBar open={open}/>
         <div className='w-full'>
           <section>
@@ -47,7 +47,7 @@ export default function Home({posts}) {
               />
               </div>
               <div className='md:w-4/5'>
-                <div className='TITLE font-bold text-3xl mt-3 md:text-5xl '>Ahmed Abdul Saad</div>
+                <div className='TITLE font-bold text-3xl mt-3 md:text-6xl '>Ahmed Abdul Saad</div>
                 <div className='mt-1 text-gray-800 text-lg dark:text-gray-100'>Computer Engineering @ American University of Sharjah</div>
                 <div className='mt-4 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>I love making cool stuff for the web and building machine learning & AI applications. Currently building a MLOps application and learning web dev on the side. Interested in fitness, self-development and basketball.</div>
               </div>
@@ -56,13 +56,17 @@ export default function Home({posts}) {
           <section className='mt-8 w-full'>
             <div className='text-2xl font-bold w-full md:text-3xl mb-3'>Projects</div>
             <div className='CARDS SECTION flex w-full flex-col space-y-4'>
-              <div className='ROW1 flex flex-col justify-center items-center space-y-3 md:space-y-0 md:flex-row md:space-x-4 md:hidden'>
-                <ProjectCardMob title="Bug Tracker" desc="A minimal, efficient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' href='https://github.com/xosaad/BugTrackerApp'/>
-                <ProjectCardMob title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' href='https://github.com/xosaad/ManageLandingPage'/>
-              </div>
+            <div className='flex flex-col gap-3 md:hidden'>
+                  <BugTrackerCard/> 
+                  <ManageCard/>
+                  <PortfolioCard/>
+            </div>
               <div className='ROW1 hidden flex-col w-full space-y-4 md:space-y-0 md:block'>
-                <ProjectCard2 title="Bug Tracker" desc="A minimal, efficient bug tracking Android application built for developer teams to track bugs in their projects. Built with Java and Firebase." image='/BugTracker-final2.png' categ={categs1} href='https://github.com/xosaad/BugTrackerApp'/>
-                <ProjectCard3 title="Manage Landing Page" desc="A landing page built for Manage using Tailwind CSS, HTML and JavaScript."image='/Manage-final2.png' categ={categs2} href='https://github.com/xosaad/ManageLandingPage'/>
+                <div className='flex gap-2'>
+                  <BugTrackerCard/> 
+                  <ManageCard/>
+                  <PortfolioCard/>
+                </div>
               </div>
               <Link className='text-lg text-gray-500  decoration-dotted decoration-1  dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100' href='https://www.github.com/xosaad' target='_blank' >See all Projects → </Link>
               

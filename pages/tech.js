@@ -2,6 +2,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Head from 'next/head'
 
+
 export default function Tech(){
     return(
         <>
@@ -12,7 +13,7 @@ export default function Tech(){
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
-        <div className='flex flex-col justify-center w-full max-w-3xl px-5 mx-auto mb-16 overflow-x-hidden '>
+        <div className='flex flex-col justify-center w-full max-w-4xl px-5 mx-auto mb-16 overflow-x-hidden '>
             <NavBar/>
             <div className='TITLE font-bold text-4xl md:mt-16 md:text-5xl dark:text-gray-100'>Tech</div>
             <div className='PAGEINTRO text-xl text-gray-500 my-5 dark:text-gray-300'>Hey there! This page shows a list of all the tech products that I have and use regularly.</div>
@@ -50,7 +51,7 @@ export default function Tech(){
                     </ul>
                 </div>
             </div>
-           
+            
             <div className='mt-24 w-full'><Footer/></div>
         </div>
         </>
