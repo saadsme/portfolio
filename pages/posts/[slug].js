@@ -82,7 +82,7 @@ export default function BlogPost({post}){
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={post.desciption} />
-        <meta property="og:image" content={post.coverPhoto.url} />
+        {/*<meta property="og:image" content={post.coverPhoto.url} />*/}
       </Head>
         <div className='px-5 mx-auto overflow-x-hidden'>
             <NavBar/>
