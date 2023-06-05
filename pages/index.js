@@ -9,6 +9,8 @@ import BlogCard from '../components/BlogCard';
 import { ManageCard } from '../components/ManageCard';
 import { BugTrackerCard } from '../components/BugTrackerCard';
 import { PortfolioCard } from '../components/PortfolioCard';
+import { SQLCard } from '../components/SQLCard';
+import { PromptlyCard } from '../components/PromptlyCard';
 
 export default function Home({posts}) {
   let open=false;
@@ -57,15 +59,21 @@ export default function Home({posts}) {
             <div className='text-2xl font-bold w-full md:text-3xl mb-3'>Projects</div>
             <div className='CARDS SECTION flex w-full flex-col space-y-4'>
             <div className='flex flex-col gap-3 md:hidden'>
-                  <BugTrackerCard/> 
+                  <SQLCard/>
+                  <PromptlyCard/>
                   <ManageCard/>
                   <PortfolioCard/>
+                  <BugTrackerCard/>
             </div>
-              <div className='ROW1 hidden flex-col w-full space-y-4 md:space-y-0 md:block'>
+              <div className='ROW1 hidden flex-col w-full space-y-4 md:space-y-2 md:block'>
                 <div className='flex gap-2'>
-                  <BugTrackerCard/> 
+                <SQLCard/>
+                <PromptlyCard/>
+                </div>
+                <div className='flex gap-2'>
                   <ManageCard/>
                   <PortfolioCard/>
+                  <BugTrackerCard/>
                 </div>
               </div>
               <Link className='text-lg text-gray-500  decoration-dotted decoration-1  dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100' href='https://www.github.com/xosaad' target='_blank' >See all Projects → </Link>
@@ -76,7 +84,7 @@ export default function Home({posts}) {
           </section>
           <section>
           <div className='my-8 font-bold text-3xl'>Experience</div>
-            <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-gray-700 dark:text-gray-100 bg-gray-300 hover:animate-pulse">
+            <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-gray-700 dark:text-gray-100 bg-gray-300">
               <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" points={bulletsExp1}/>
           </div>
         </section>

@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 html {
-  @apply dark:bg-gray-800 bg-white;
+  @apply dark:bg-gray-800 bg-white ;
+  
 }
 
 body {
   @apply dark:bg-gray-800 bg-white;
+  
 }
 
 body::-webkit-scrollbar {

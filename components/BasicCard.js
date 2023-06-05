@@ -7,9 +7,9 @@ function BasicCard({title, date, company,points}) {
     <div class="w-full mb-2">
       <div class="flex justify-between items-center">
         <h3 class="font-bold text-xl">{title}</h3>
-        <span>{date}</span>
+        <span className='text-sm'>{date}</span>
       </div>
-      <p class="text-lg">
+      <p class="text-md italic">
         {company}
       </p>
       <ul class=" mt-1 px-3 list-disc">

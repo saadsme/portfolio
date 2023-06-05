@@ -2,6 +2,7 @@ import {GraphQLClient, gql} from 'graphql-request'
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import Head from 'next/head'
+import Image from 'next/image';
 import HTMLReactParser from 'html-react-parser';
 
 const HTMLRenderer = ({ htmlContent }) => {
@@ -82,10 +83,13 @@ export default function BlogPost({post}){
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={post.desciption} />
-        {/*<meta property="og:image" content={post.coverPhoto.url} />*/}
+        <meta property="og:image" content={post.coverPhoto.url} />
+        
       </Head>
         <div className='px-5 mx-auto overflow-x-hidden'>
             <NavBar/>
+            {/*<img src={post.coverPhoto.url} alt={pageTitle} width={1920} height={1080} className='object-cover object-center w-full h-96'/>
+              */}
             <div className='MAIN CONTENT flex flex-col items-start mx-auto justify-center  max-w-md md:max-w-4xl w-full mb-16'>
                 <h1 className='text-3xl md: font-bold mt-5 md:mt-0 md:text-5xl'>{pageTitle}</h1>
                 <p className='text-gray-500 py-3 dark:text-gray-300'>{toDate(post.publishedOn)}</p>
