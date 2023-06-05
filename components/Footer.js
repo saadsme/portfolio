@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-        <div className='mx-auto '>
+        <div className='mx-auto dark:bg-gray-800'>
             <span className="block h-0.5 w-full bg-gray-300 mb-5 md:max-w-4xl "></span>
             <div className='flex flex-col justify-center  md:flex-row md:justify-between md:px-48 '>
                     <div className='flex flex-col space-y-0.5 justify-center items-center mb-3 md:justify-start md:items-start text-gray-500 dark:text-gray-300'>
