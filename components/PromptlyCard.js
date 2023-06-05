@@ -19,7 +19,7 @@ export const PromptlyCard = ({title,desc,image,link}) => (
         </div>
         <div className="p-5 pt-3 flex backdrop-blur-lg rounded-t-none rounded-2xl flex-end gap-4 max-h-[32%]">
             <div className="text-xs w-3/5 dark:text-black">
-            Share your prompts with the world. Built with Next.js, TailwindCSS, and MongoDB.
+            Share your AI prompts with the world. Built with Next.js, TailwindCSS, and MongoDB.
             </div>
             <div className="w-2/5 flex justify-center items-center">
                 <button className=" rounded-2xl text-xs uppercase font-bold bg-red-100 text-red-800 py-2 px-5 mt-2 ">soon↗</button>
