@@ -36,6 +36,19 @@ export default function Home({posts}) {
         <meta name="image" property="og:image" content="https://www.aasaad.me/OG_image.png"/>
         <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"/>
         <meta name="author" content="Ahmed Abdul Saad"></meta>
+        <meta property="og:url" content="https://aasaad.me"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Home | Ahmed Abdul Saad"/>
+        <meta property="og:description" content="Ahmed Abdul Saad's Website & Blog. "/>
+        <meta property="og:image" content="https://www.aasaad.me/OG_image.png"/>
+
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="aasaad.me"/>
+        <meta property="twitter:url" content="https://aasaad.me"/>
+        <meta name="twitter:title" content="Home | Ahmed Abdul Saad"/>
+        <meta name="twitter:description" content=""/>
+        <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"></meta>
       </Head>
       
       <main className='flex flex-col w-full max-w-md mx-auto px-5 md:max-w-4xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
