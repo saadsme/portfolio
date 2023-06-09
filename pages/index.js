@@ -35,6 +35,7 @@ export default function Home({posts}) {
         <meta name="og:image" content="/OG_image.png" />
         <meta name="image" property="og:image" content="/OG_image.png"/>
         <meta name="twitter:image" content="/OG_image.png"/>
+        <meta name="author" content="Ahmed Abdul Saad"></meta>
       </Head>
       
       <main className='flex flex-col w-full max-w-md mx-auto px-5 md:max-w-4xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
