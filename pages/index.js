@@ -32,7 +32,8 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <meta name="og-image" content="/OG_image.png" />
+        <meta name="og:image" content="/OG_image.png" />
+        <meta name="twitter:image" content="/OG_image.png"/>
       </Head>
       
       <main className='flex flex-col w-full max-w-md mx-auto px-5 md:max-w-4xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
