@@ -32,9 +32,9 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <meta name="og:image" content="/OG_image.png" />
-        <meta name="image" property="og:image" content="/OG_image.png"/>
-        <meta name="twitter:image" content="/OG_image.png"/>
+        <meta name="og:image" content="https://www.aasaad.me/OG_image.png" />
+        <meta name="image" property="og:image" content="https://www.aasaad.me/OG_image.png"/>
+        <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"/>
         <meta name="author" content="Ahmed Abdul Saad"></meta>
       </Head>
       
