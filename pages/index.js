@@ -39,7 +39,7 @@ export default function Home({posts}) {
         <meta property="og:url" content="https://aasaad.me"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Home | Ahmed Abdul Saad"/>
-        <meta property="og:description" content="Ahmed Abdul Saad's Website & Blog. "/>
+        <meta property="og:description" content="Website and Blog of Ahmed Abdul Saad."/>
         <meta property="og:image" content="https://www.aasaad.me/OG_image.png"/>
 
         
