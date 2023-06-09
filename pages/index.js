@@ -28,11 +28,12 @@ export default function Home({posts}) {
     <>
       <Head>
         <title>Home | Ahmed Abdul Saad</title>
-        <meta name="description" content="Ahmed Abdul Saad's Website & Blog" />
+        <meta name="description" content="Ahmed Abdul Saad's Website & Blog. " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta name="og:image" content="/OG_image.png" />
+        <meta name="image" property="og:image" content="/OG_image.png"/>
         <meta name="twitter:image" content="/OG_image.png"/>
       </Head>
       
