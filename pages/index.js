@@ -47,7 +47,7 @@ export default function Home({posts}) {
         <meta property="twitter:domain" content="aasaad.me"/>
         <meta property="twitter:url" content="https://aasaad.me"/>
         <meta name="twitter:title" content="Home | Ahmed Abdul Saad"/>
-        <meta name="twitter:description" content=""/>
+        <meta name="twitter:description" content="Ahmed Abdul Saad's Website & Blog. "/>
         <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"></meta>
       </Head>
       
