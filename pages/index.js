@@ -28,10 +28,10 @@ export default function Home({posts}) {
     <>
       <Head>
         <title>Home | Ahmed Abdul Saad</title>
-        <meta name="description" content="Ahmed Abdul Saad's Website & Blog. " />
+        <meta name="description" content="Website and Blog of Ahmed Abdul Saad." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico"/>
         <meta name="og:image" content="https://www.aasaad.me/OG_image.png" />
         <meta name="image" property="og:image" content="https://www.aasaad.me/OG_image.png"/>
         <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"/>
@@ -47,7 +47,7 @@ export default function Home({posts}) {
         <meta property="twitter:domain" content="aasaad.me"/>
         <meta property="twitter:url" content="https://aasaad.me"/>
         <meta name="twitter:title" content="Home | Ahmed Abdul Saad"/>
-        <meta name="twitter:description" content="Ahmed Abdul Saad's Website & Blog. "/>
+        <meta name="twitter:description" content="Website and Blog of Ahmed Abdul Saad."/>
         <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"></meta>
       </Head>
       
