@@ -21,7 +21,7 @@ export default function Home({posts}) {
                   ,'Demonstrated strong technical skills in database administration using MariaDB, and proficiency in multiple content management systems such as Strapi and HCL Dx.'
                   ,'Practised rapid software development using the Agile / Scrum lifecycle.'
                 ]
-  var bulletsExp2 = ["Built a webapp that evaluates testcases using AI to improve the firm's QA perfomance."
+  var bulletsExp2 = ["Built a webapp that evaluates testcases using AI to improve the firm's QA performance."
                 ,'Utilized the OpenAI GPT3.5 Turbo API for evaluation of the testcases.'
                 ,'Successfully integrated the webapp to the production testing tool to provide seamless flow of evaluations.'
               ]
