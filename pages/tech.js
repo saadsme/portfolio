@@ -19,7 +19,7 @@ export default function Tech(){
             <div className='PAGEINTRO text-xl text-gray-500 my-5 dark:text-gray-300'>Hey there! This page shows a list of all the tech products that I have and use regularly.</div>
             <div className='MAIN-PAGE-SECTION space-y-12 '>
                 <div className='SECTION 1'>
-                    <h1 className='font-bold text-2xl mb-2 text-gray-800'>Daily Tech</h1>
+                    <h1 className='font-bold text-2xl mb-2 text-gray-800 dark:text-gray-300 '>Daily Tech</h1>
                     <ul className='ml-5 text-lg space-y-3 text-gray-500 list-disc dark:text-gray-300'>
                         <li>iPhone 13 mini</li>
                         <li>MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)</li>

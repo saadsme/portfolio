@@ -67,11 +67,17 @@ export default function Home({posts}) {
                 height={1200}
               />
               </div>
-              <div className='md:w-4/5'>
+              <div className='md:w-4/5 flex flex-col'>
                 <div className='TITLE font-bold text-3xl mt-3 md:text-4xl '>Ahmed Abdul Saad</div>
-                <div className='mt-1 text-gray-800 text-lg dark:text-gray-100'>Freelance Web Developer</div>
-                <div className='mt-4 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>I build AI-powered WebApps, 3D Web Experiences and cool landing pages. </div>
-                <div className='mt-4 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>Get in touch. </div>
+                <div className=' text-gray-800 text-lg dark:text-gray-100'>Freelance Web Developer</div>
+                <div className='mt-3 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>I build AI-powered WebApps, 3D Web Experiences and cool landing pages. </div>
+                {/* <button className='mt-4 hover:animate-pulse dark:text-black rounded-md p-2 bg-black dark:bg-white md:max-w-md text-md text-gray-100' href="mailto:aasaad.me@gmail.com" target="_blank">Get in touch.</button> */}
+                <div className='mt-6 '>
+                <Link className='hover:animate-pulse dark:text-black rounded-lg px-2 py-3 bg-black dark:bg-white text-md text-gray-100' href="mailto:aasaad.me@gmail.com" target="_blank">
+                  Get in touch ↗
+                </Link>
+                  
+                </div>
               </div>
             </div>
           </section>
@@ -105,17 +111,17 @@ export default function Home({posts}) {
           <section>
           <div className='my-8 font-bold text-3xl'>Experience</div>
           <div className='flex flex-col gap-2'> 
-            <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-gray-700 dark:text-gray-100 bg-gray-300">
+            <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-300">
               <BasicCard title="Software Engineer Intern" date="June 2023" company="Beno Technologies" points={bulletsExp2}/>
             </div>
-            <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-gray-700 dark:text-gray-100 bg-gray-300">
+            <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-300">
               <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" points={bulletsExp1}/>
             </div>
             </div>
         </section>
           <section>
           <div className='my-8 font-bold text-3xl'>Education</div>
-            <div class=" p-7 rounded-2xl dark:bg-gray-700 dark:text-gray-100 bg-gray-300 w-full transition-all">
+            <div class=" p-7 rounded-2xl dark:bg-zinc-800 dark:text-gray-100 bg-gray-300 w-full transition-all">
               
               <BasicCard title="BSc Computer Engineering" date="May 2023" company="American University of Sharjah" points={bulletsEdu1}/>
             </div>

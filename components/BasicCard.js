@@ -1,6 +1,7 @@
 import React from 'react'
 
 function BasicCard({title, date, company,points}) {
+  var i =0;
   return (
     <div>
         <div class="flex items-center ">
@@ -15,7 +16,7 @@ function BasicCard({title, date, company,points}) {
       <ul class=" mt-1 px-3 list-disc">
       { 
         points.map((cat) => (
-          <li className='m-1 list-disc'>{cat}</li>
+          <li className='m-1 list-disc' key={i++}>{cat}</li>
           )
           )}
         
