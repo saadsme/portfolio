@@ -21,6 +21,10 @@ export default function Home({posts}) {
                   ,'Demonstrated strong technical skills in database administration using MariaDB, and proficiency in multiple content management systems such as Strapi and HCL Dx.'
                   ,'Practised rapid software development using the Agile / Scrum lifecycle.'
                 ]
+  var bulletsExp2 = ["Built a webapp that evaluates testcases using AI to improve the firm's QA perfomance."
+                ,'Utilized the OpenAI GPT3.5 Turbo API for evaluation of the testcases.'
+                ,'Successfully integrated the webapp to the production testing tool to provide seamless flow of evaluations.'
+              ]
  var bulletsEdu1 = ['Major Electives: Neural Networks & Deep Learning, ML, Mobile App Dev, VR/AR' 
                   ,'Awards: Outstanding Student Scholarship Award, Hamid Jafar Scholarship Award, Undergraduate Research Grant Award'
                 ]
@@ -41,7 +45,6 @@ export default function Home({posts}) {
         <meta property="og:title" content="Home | Ahmed Abdul Saad"/>
         <meta property="og:description" content="Website and Blog of Ahmed Abdul Saad."/>
         <meta property="og:image" content="https://www.aasaad.me/OG_image.png"/>
-
         
         <meta name="twitter:card" content="summary_large_image"/>
         <meta property="twitter:domain" content="aasaad.me"/>
@@ -65,9 +68,10 @@ export default function Home({posts}) {
               />
               </div>
               <div className='md:w-4/5'>
-                <div className='TITLE font-bold text-3xl mt-3 md:text-6xl '>Ahmed Abdul Saad</div>
-                <div className='mt-1 text-gray-800 text-lg dark:text-gray-100'>Computer Engineering @ American University of Sharjah</div>
-                <div className='mt-4 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>I love making cool stuff for the web and building machine learning & AI applications. Currently building a MLOps application and learning web dev on the side. Interested in fitness, self-development and basketball.</div>
+                <div className='TITLE font-bold text-3xl mt-3 md:text-4xl '>Ahmed Abdul Saad</div>
+                <div className='mt-1 text-gray-800 text-lg dark:text-gray-100'>Freelance Web Developer</div>
+                <div className='mt-4 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>I build AI-powered WebApps, 3D Web Experiences and cool landing pages. </div>
+                <div className='mt-4 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>Get in touch. </div>
               </div>
             </div>
           </section>
@@ -100,9 +104,14 @@ export default function Home({posts}) {
           </section>
           <section>
           <div className='my-8 font-bold text-3xl'>Experience</div>
+          <div className='flex flex-col gap-2'> 
+            <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-gray-700 dark:text-gray-100 bg-gray-300">
+              <BasicCard title="Software Engineer Intern" date="June 2023" company="Beno Technologies" points={bulletsExp2}/>
+            </div>
             <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-gray-700 dark:text-gray-100 bg-gray-300">
               <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" points={bulletsExp1}/>
-          </div>
+            </div>
+            </div>
         </section>
           <section>
           <div className='my-8 font-bold text-3xl'>Education</div>
