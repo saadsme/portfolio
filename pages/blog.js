@@ -1,9 +1,10 @@
-import {GraphQLClient, gql} from 'graphql-request'
+
 import NavBar from '../components/NavBar';
 import BlogCard from '/components/BlogCard.js'
 import Footer from '../components/Footer';
 import Head from 'next/head'
 
+import {GraphQLClient, gql} from 'graphql-request'
 const graphcms = new GraphQLClient("https://api-ap-south-1.hygraph.com/v2/clckiz8mj1fr101ukd1cqfzkm/master");
 
 //TODO: TEST IF THE PUBLISHED ON FILTER IS WORKING
@@ -60,7 +61,7 @@ export default function Blog({posts}){
             { 
             posts.map((post) => (
 
-              <div className='w-4xl'>
+              <div className='w-4xl' key={Math.random()}>
                 <BlogCard 
                     title={post.title} 
                     author={post.author} 

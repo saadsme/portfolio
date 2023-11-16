@@ -76,7 +76,7 @@ export default function BlogPost({post}){
     const pageTitle = HTMLReactParser(post.title).toString();
     return(<>
     <Head>
-        <title>{pageTitle} | Ahmed Saad</title>
+        <title>{`${pageTitle} | Ahmed Saad`}</title>
         <meta name="description" content={post.desciption} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
