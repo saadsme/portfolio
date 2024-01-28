@@ -9,7 +9,7 @@ export default async (req, res) => {
         firstName: '',
         lastName: '',
         unsubscribed: false,
-        audienceId: 'your-audience-id',
+        audienceId: '2eef985f-c140-4975-90a5-0e7eed510061',
       });
       
     if (error) {
