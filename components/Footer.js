@@ -7,20 +7,40 @@ const Footer = () => {
     const [email, setEmail] = useState('');
     const subscribeToNewsletter = async () => {
     
-        const resend = new Resend("re_8AcHGT4F_BjvXdySW2tX81oNwULQM6Z8L");
-        var response = resend.contacts.create({
-            email: email,
-            firstName: 'Steve',
-            lastName: 'Wozniak',
-            unsubscribed: false,
-            audienceId: '2eef985f-c140-4975-90a5-0e7eed510061',
-          });
-          console.log(response);
-          setEmail('');
+        //const resend = new Resend("re_8AcHGT4F_BjvXdySW2tX81oNwULQM6Z8L");
+        var response = await fetch('/api/subscribe', {
+            method: 'POST',
+            body: JSON.stringify({ email }),
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            })
+            if(response.status === 200){
+               
+                var response = await fetch('/api/sendWelcomeMail', {
+                    method: 'POST',
+                    body: JSON.stringify({ email }),
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    })
+                    if(response.status === 200){
+                        alert('Thanks for subscribing! You might wanna check your email for a little surprise!😉')
+                    }
+                    else{
+                        alert('Error Sending Welcome Mail!')
+                    }
+            }
+            else{
+                alert('Error Subscribing!')
+            }
+
+        
+          //setEmail('');
      }
   return (
         <div className='mx-auto '>
-            {/* <div className='flex flex-col justify-center items-center gap-3'>
+            <div className='flex flex-col justify-center items-center gap-3'>
             <div className='font-bold text-3xl'>
             Join My Newsletter👇
             </div>
@@ -31,7 +51,7 @@ const Footer = () => {
                 placeholder='Enter your email address'/>
                 <button className='bg-gray-900 text-gray-100 rounded-xl p-2  text-sm' onClick={subscribeToNewsletter}>Subscribe</button>
             </div>
-            </div> */}
+            </div>
             <span className="block h-0.5 w-full bg-gray-300 mb-5 md:max-w-4xl mt-5"></span>
             <div className='flex flex-col justify-center  md:flex-row md:justify-between md:px-48 '>
                 
