@@ -49,7 +49,7 @@ const Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder='Enter your email address'/>
-                <button className='bg-gray-900 text-gray-100 rounded-xl p-2  text-sm' onClick={subscribeToNewsletter}>Subscribe</button>
+                <button className='bg-gray-900 dark:bg-gray-100 dark:text-black text-gray-100 rounded-xl p-2  text-sm' onClick={subscribeToNewsletter}>Subscribe</button>
             </div>
             </div>
             <span className="block h-0.5 w-full bg-gray-300 mb-5 md:max-w-4xl mt-5"></span>
