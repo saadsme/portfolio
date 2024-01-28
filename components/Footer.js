@@ -20,7 +20,7 @@ const Footer = () => {
      }
   return (
         <div className='mx-auto '>
-            <div className='flex flex-col justify-center items-center gap-3'>
+            {/* <div className='flex flex-col justify-center items-center gap-3'>
             <div className='font-bold text-3xl'>
             Join My Newsletter👇
             </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                 placeholder='Enter your email address'/>
                 <button className='bg-gray-900 text-gray-100 rounded-xl p-2  text-sm' onClick={subscribeToNewsletter}>Subscribe</button>
             </div>
-            </div>
+            </div> */}
             <span className="block h-0.5 w-full bg-gray-300 mb-5 md:max-w-4xl mt-5"></span>
             <div className='flex flex-col justify-center  md:flex-row md:justify-between md:px-48 '>
                 
