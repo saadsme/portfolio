@@ -7,7 +7,6 @@ const Footer = () => {
     const [email, setEmail] = useState('');
     const subscribeToNewsletter = async () => {
     
-        //const resend = new Resend("re_8AcHGT4F_BjvXdySW2tX81oNwULQM6Z8L");
         var response = await fetch('/api/subscribe', {
             method: 'POST',
             body: JSON.stringify({ email }),
