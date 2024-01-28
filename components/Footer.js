@@ -34,9 +34,7 @@ const Footer = () => {
             else{
                 alert('Error Subscribing!')
             }
-
-        
-          //setEmail('');
+          setEmail('');
      }
   return (
         <div className='mx-auto '>
