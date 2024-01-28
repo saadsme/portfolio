@@ -8,7 +8,7 @@ export const PortfolioCard = ({title,desc,image,link}) => (
    style={{ backgroundImage: "url('/Portfolio.png')" }}
 
   > 
-  <Link href="https://aasaad.me">
+  <Link href="https://saads.me">
     <div className=" flex flex-col justify-between h-full">
         <div className=" p-5 flex flex-col">
             <div className="uppercase font-bold text-xs dark:text-black">

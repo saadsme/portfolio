@@ -1,12 +1,40 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import React from 'react'
+import {React, useState} from 'react'
+import { Resend } from 'resend';
 
 const Footer = () => {
+    const [email, setEmail] = useState('');
+    const subscribeToNewsletter = async () => {
+    
+        const resend = new Resend("re_8AcHGT4F_BjvXdySW2tX81oNwULQM6Z8L");
+        var response = resend.contacts.create({
+            email: email,
+            firstName: 'Steve',
+            lastName: 'Wozniak',
+            unsubscribed: false,
+            audienceId: '2eef985f-c140-4975-90a5-0e7eed510061',
+          });
+          console.log(response);
+          setEmail('');
+     }
   return (
         <div className='mx-auto '>
-            <span className="block h-0.5 w-full bg-gray-300 mb-5 md:max-w-4xl "></span>
+            <div className='flex flex-col justify-center items-center gap-3'>
+            <div className='font-bold text-3xl'>
+            Join My Newsletter👇
+            </div>
+            <div className='flex max-w-sm gap-1'>
+                <input className='border-2 border-gray-300 rounded-xl p-2 w-96 text-sm ' 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder='Enter your email address'/>
+                <button className='bg-gray-900 text-gray-100 rounded-xl p-2  text-sm' onClick={subscribeToNewsletter}>Subscribe</button>
+            </div>
+            </div>
+            <span className="block h-0.5 w-full bg-gray-300 mb-5 md:max-w-4xl mt-5"></span>
             <div className='flex flex-col justify-center  md:flex-row md:justify-between md:px-48 '>
+                
                     <div className='flex flex-col space-y-0.5 justify-center items-center mb-3 md:justify-start md:items-start text-gray-500 dark:text-gray-300'>
                         <Link className="hover:bg-gray-200 p-1 rounded hover:text-gray-700 "  href={'/'}>Home</Link>
                         {//<Link className="hover:bg-gray-200 p-1 rounded hover:text-gray-700 "  href={'/projects'}>Projects</Link>
@@ -28,7 +56,7 @@ const Footer = () => {
                                 <Image src='/logos/twitter.svg' className='p-1' alt='logo' width={35} height={1}/>
                             Twitter ↗
                         </Link>
-                        <Link className=" flex items-center underline underline-offset-2 decoration-dotted decoration-1 hover:text-gray-700 underline-solid hover:bg-gray-200 rounded px-1" href={'mailto:mail@aasaad.me'} target="_blank">
+                        <Link className=" flex items-center underline underline-offset-2 decoration-dotted decoration-1 hover:text-gray-700 underline-solid hover:bg-gray-200 rounded px-1" href={'mailto:hello@saads.me'} target="_blank">
                                 <Image src='/logos/mail.png' className='' alt='logo' width={35} height={1}/>
                             Email ↗
                         </Link>

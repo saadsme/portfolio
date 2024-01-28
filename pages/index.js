@@ -25,6 +25,10 @@ export default function Home({posts}) {
                 ,'Utilized the OpenAI GPT3.5 Turbo API for evaluation of the testcases.'
                 ,'Successfully integrated the webapp to the production testing tool to provide seamless flow of evaluations.'
               ]
+  var bulletsExp3 = ["Building a sophesticated RAG LLM based chatbot for the firm's website"
+                ,'Ensuring code quality and best practices are followed during the development process'
+                
+              ]
  var bulletsEdu1 = ['Major Electives: Neural Networks & Deep Learning, ML, Mobile App Dev, VR/AR' 
                   ,'Awards: Outstanding Student Scholarship Award, Hamid Jafar Scholarship Award, Undergraduate Research Grant Award'
                 ]
@@ -36,22 +40,22 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico"/>
-        <meta name="og:image" content="https://www.aasaad.me/OG_image.png" />
-        <meta name="image" property="og:image" content="https://www.aasaad.me/OG_image.png"/>
-        <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"/>
+        <meta name="og:image" content="https://www.saads.me/OG_image.png" />
+        <meta name="image" property="og:image" content="https://www.saads.me/OG_image.png"/>
+        <meta name="twitter:image" content="https://www.saads.me/OG_image.png"/>
         <meta name="author" content="Ahmed Abdul Saad"></meta>
-        <meta property="og:url" content="https://aasaad.me"/>
+        <meta property="og:url" content="https://saads.me"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Home | Ahmed Abdul Saad"/>
         <meta property="og:description" content="Website and Blog of Ahmed Abdul Saad."/>
-        <meta property="og:image" content="https://www.aasaad.me/OG_image.png"/>
+        <meta property="og:image" content="https://www.saads.me/OG_image.png"/>
         
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:domain" content="aasaad.me"/>
-        <meta property="twitter:url" content="https://aasaad.me"/>
+        <meta property="twitter:domain" content="saads.me"/>
+        <meta property="twitter:url" content="https://saads.me"/>
         <meta name="twitter:title" content="Home | Ahmed Abdul Saad"/>
         <meta name="twitter:description" content="Website and Blog of Ahmed Abdul Saad."/>
-        <meta name="twitter:image" content="https://www.aasaad.me/OG_image.png"></meta>
+        <meta name="twitter:image" content="https://www.saads.me/OG_image.png"></meta>
       </Head>
       
       <main className='flex flex-col w-full max-w-md mx-auto px-5 md:max-w-4xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
@@ -71,9 +75,9 @@ export default function Home({posts}) {
                 <div className='TITLE font-bold text-3xl mt-3 md:text-4xl '>Ahmed Abdul Saad</div>
                 <div className=' text-gray-800 text-lg dark:text-gray-100'>Freelance Web Developer</div>
                 <div className='mt-3 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>I build AI-powered WebApps, 3D Web Experiences and cool landing pages. </div>
-                {/* <button className='mt-4 hover:animate-pulse dark:text-black rounded-md p-2 bg-black dark:bg-white md:max-w-md text-md text-gray-100' href="mailto:aasaad.me@gmail.com" target="_blank">Get in touch.</button> */}
+                {/* <button className='mt-4 hover:animate-pulse dark:text-black rounded-md p-2 bg-black dark:bg-white md:max-w-md text-md text-gray-100' href="mailto:hello@saads.me" target="_blank">Get in touch.</button> */}
                 <div className='mt-6 '>
-                <Link className='hover:animate-pulse dark:text-black rounded-lg px-2 py-3 bg-black dark:bg-white text-md text-gray-100' href="mailto:aasaad.me@gmail.com" target="_blank">
+                <Link className='hover:animate-pulse dark:text-black rounded-lg px-2 py-3 bg-black dark:bg-white text-md text-gray-100' href="mailto:hello@saads.me" target="_blank">
                   Get in touch ↗
                 </Link>
                   
@@ -81,6 +85,20 @@ export default function Home({posts}) {
               </div>
             </div>
           </section>
+          <section>
+          <div className='my-8 font-bold text-3xl'>Experience</div>
+          <div className='flex flex-col gap-2'> 
+          <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
+              <BasicCard title="Junior Software Engineer" date="Oct 2023 - present" company="Beno Technologies" points={bulletsExp3}/>
+            </div>
+            <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
+              <BasicCard title="Software Engineer Intern" date="June 2023 - Oct 2023" company="Beno Technologies" points={bulletsExp2}/>
+            </div>
+            <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
+              <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" points={bulletsExp1}/>
+            </div>
+            </div>
+        </section>
           <section className='mt-8 w-full'>
             <div className='text-2xl font-bold w-full md:text-3xl mb-3'>Projects</div>
             <div className='CARDS SECTION flex w-full flex-col space-y-4'>
@@ -108,17 +126,7 @@ export default function Home({posts}) {
               
             
           </section>
-          <section>
-          <div className='my-8 font-bold text-3xl'>Experience</div>
-          <div className='flex flex-col gap-2'> 
-            <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-300">
-              <BasicCard title="Software Engineer Intern" date="June 2023" company="Beno Technologies" points={bulletsExp2}/>
-            </div>
-            <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-300">
-              <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" points={bulletsExp1}/>
-            </div>
-            </div>
-        </section>
+          
           <section>
           <div className='my-8 font-bold text-3xl'>Education</div>
             <div class=" p-7 rounded-2xl dark:bg-zinc-800 dark:text-gray-100 bg-gray-300 w-full transition-all">
