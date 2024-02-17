@@ -2,7 +2,7 @@ import {React} from 'react'
 
 const Footer = () => {
   return (
-        <div className='mx-auto flex justify-between text-xs mb-8'>
+        <div className='mx-auto flex justify-between text-xs mb-8 animate-fadedown '>
         <div>
             Designed and Developed by <b> Ahmed Saad </b>
         </div>

@@ -58,26 +58,26 @@ export default function Home({posts}) {
         <meta name="twitter:image" content="https://www.saads.me/OG_image.png"></meta>
       </Head>
       
-      <main className='flex flex-col w-full max-w-md mx-auto px-5 md:max-w-4xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
+      <main className=' animate-fadedown flex flex-col w-full max-w-md mx-auto px-5 md:max-w-4xl overflow-x-hidden ' onClick={()=>open=(open?open:!open) }>
         <NavBar open={open}/>
         <div className='w-full'>
           <section>
-            <div className='flex flex-col md:flex-row-reverse w-full'>
-              <div className='PROFILE PICTURE rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
+            <div className='flex flex-col md:flex-row-reverse w-full '>
+              <div className=' animate-fadeup PROFILE PICTURE  rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
               <Image 
-              className='rounded-full select-none'
+              className='rounded-full select-none '
                 src={'/sq-photo.jpeg'}
                 width={1200}
                 height={1200}
               />
               </div>
-              <div className='md:w-4/5 flex flex-col'>
+              <div className='md:w-4/5 flex flex-col animate-fadedown '>
                 <div className='TITLE font-bold text-3xl mt-3 md:text-4xl '>Ahmed Abdul Saad</div>
-                <div className=' text-gray-800 text-lg dark:text-gray-100'>Freelance Web Developer</div>
-                <div className='mt-3 text-gray-500 w-full md:max-w-md text-lg dark:text-gray-100'>I build AI-powered WebApps, 3D Web Experiences and cool landing pages. </div>
+                <div className=' text-gray-800 text-md dark:text-gray-100'>Freelance Web Developer</div>
+                <div className='mt-3 text-gray-500 w-full md:max-w-md text-md dark:text-gray-100'>I build AI-powered WebApps, 3D Web Experiences and cool landing pages. </div>
                 {/* <button className='mt-4 hover:animate-pulse dark:text-black rounded-md p-2 bg-black dark:bg-white md:max-w-md text-md text-gray-100' href="mailto:hello@saads.me" target="_blank">Get in touch.</button> */}
                 <div className='mt-6 '>
-                <Link className='hover:animate-pulse dark:text-black rounded-lg px-2 py-3 bg-black dark:bg-white text-md text-gray-100' href="mailto:hello@saads.me" target="_blank">
+                <Link className='hover:animate-pulse dark:text-black rounded-2xl px-4 py-3 bg-black dark:bg-white text-md text-gray-100' href="mailto:hello@saads.me" target="_blank">
                   Get in touch ↗
                 </Link>
                   
@@ -85,21 +85,21 @@ export default function Home({posts}) {
               </div>
             </div>
           </section>
-          <section>
-          <div className='my-8 font-bold text-3xl'>Experience</div>
+          <section className=''>
+          <div className='my-8 font-bold text-3xl animate-fadedown'>Experience</div>
           <div className='flex flex-col gap-2'> 
-          <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
+          <div class=" animate-fadedown rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
               <BasicCard title="Junior Software Engineer" date="Oct 2023 - present" company="Beno Technologies" points={bulletsExp3}/>
             </div>
-            <div class=" rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
+            <div class="animate-fadedown rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
               <BasicCard title="Software Engineer Intern" date="June 2023 - Oct 2023" company="Beno Technologies" points={bulletsExp2}/>
             </div>
-            <div class="rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
+            <div class="animate-fadedown rounded-2xl px-7 py-5 mb-6 w-full transition-all dark:bg-zinc-800 dark:text-gray-100 bg-gray-100">
               <BasicCard title="Software Engineering Intern" date="June - Aug 2022" company="Al Ghurair Investment" points={bulletsExp1}/>
             </div>
             </div>
         </section>
-          <section className='mt-8 w-full'>
+          <section className='mt-8 w-full animate-fadeup '>
             <div className='text-2xl font-bold w-full md:text-3xl mb-3'>Projects</div>
             <div className='CARDS SECTION flex w-full flex-col space-y-4'>
             <div className='flex flex-col gap-3 md:hidden'>
@@ -127,7 +127,7 @@ export default function Home({posts}) {
             
           </section>
           
-          <section>
+          <section className='animate-fadedown '>
           <div className='my-8 font-bold text-3xl'>Education</div>
             <div class=" p-7 rounded-2xl dark:bg-zinc-800 dark:text-gray-100 bg-gray-300 w-full transition-all">
               
