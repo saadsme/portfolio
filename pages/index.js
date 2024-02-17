@@ -73,12 +73,14 @@ export default function Home({posts}) {
               </div>
               <div className='md:w-4/5 flex flex-col animate-fadedown '>
                 <div className='TITLE font-bold text-3xl mt-3 md:text-4xl '>Ahmed Abdul Saad</div>
-                <div className=' text-gray-800 text-md dark:text-gray-100'>Freelance Web Developer</div>
-                <div className='mt-3 text-gray-500 w-full md:max-w-md text-md dark:text-gray-100'>I build AI-powered WebApps, 3D Web Experiences and cool landing pages. </div>
+                <div className=' text-gray-800 text-md dark:text-gray-100'>software engineer & creator</div>
+                {/* <div className=' text-gray-800 text-md dark:text-gray-100'>web developer</div>
+                <div className=' text-gray-800 text-md dark:text-gray-100'>creator</div> */}
+                <div className='mt-3 text-gray-500 w-full md:max-w-md text-md dark:text-gray-100'>Building AI web apps and stunning websites. </div>
                 {/* <button className='mt-4 hover:animate-pulse dark:text-black rounded-md p-2 bg-black dark:bg-white md:max-w-md text-md text-gray-100' href="mailto:hello@saads.me" target="_blank">Get in touch.</button> */}
                 <div className='mt-6 '>
                 <Link className='hover:animate-pulse dark:text-black rounded-2xl px-4 py-3 bg-black dark:bg-white text-md text-gray-100' href="mailto:hello@saads.me" target="_blank">
-                  Get in touch ↗
+                  let's work together ↗
                 </Link>
                   
                 </div>
