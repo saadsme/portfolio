@@ -63,7 +63,7 @@ export default function Home({posts}) {
         <div className='w-full'>
           <section>
             <div className='flex flex-col md:flex-row-reverse w-full '>
-              <div className=' animate-fadeup PROFILE PICTURE  rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
+              <div className=' PROFILE PICTURE  rounded-full flex justify-center items-center max-w-sm w-1/4 md:w-1/3 bg-gray-100'>
               <Image 
               className='rounded-full select-none '
                 src={'/sq-photo.jpeg'}
