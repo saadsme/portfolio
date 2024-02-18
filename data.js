@@ -7,43 +7,48 @@ export const data = {
             {
                 title: "LinkedIn",
                 icon: "/logos/linkedin.png",
-                href: "https://www.linkedin.com/in/ahmed-saad-0b0b5b1a2/"
+                darkicon: "/logos/linkedin-dark.png",
+                link: "https://www.linkedin.com/in/saadsme/"
             },
             {
                 title: "Twitter",
                 icon: "/logos/twitter.png",
-                href: "https://www.twitter.com/ahmedsaad1010"
+                darkicon: "/logos/twitter-dark.png",
+                link: "https://twitter.com/saadds_"
             },
             {
                 title: "TikTok",
                 icon: "/logos/tiktok.png",
-                href: "https://www.github.com/ahmedsaad1010"
+                darkicon: "/logos/tiktok-dark.png",
+                link: "https://www.tiktok.com/@saads.me"
             },
             {
                 title: "GitHub",
-                icon: "/logos/github-mark.svg",
-                href: "https://www.github.com/ahmedsaad1010"
+                icon: "/logos/github.png",
+                darkicon: "/logos/github-dark.png",
+                link: "https://www.github.com/saadsme"
             },
             {
                 title: "Instagram",
+                darkicon: "/logos/instagram-dark.png",
                 icon: "/logos/instagram.png",
-                href: "https://www.instagram.com/ahmedsaad1010"
+                link: "https://www.instagram.com/saads.me"
             }
         ],
         buttons: [
+            // {
+            //     text: "My Website",
+            //     //icon: "/logos/website.png",
+            //     link: "https://www.saads.me"
+            // },
             {
-                text: "My Website",
-                icon: "/logos/website.png",
-                link: "https://www.saads.me"
-            },
-            {
-                text: "Get my FREE Notion Task Managment Template",
-                icon: "/logos/email.png",
+                text: "Support my work!",
+                //icon: "/logos/email.png",
                 link: "https://shop.saads.me"
             },
             {
                 text: "Work with me!",
-                icon: "/logos/email.png",
+                //icon: "/logos/email.png",
                 link: "mailto:hello@saads.me"
             },
         ]
