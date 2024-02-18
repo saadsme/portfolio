@@ -1,11 +1,32 @@
 import React from 'react'
+import {useState, useEffect} from 'react'
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
 import Head from 'next/head'
 import Image from 'next/image'
 import { data } from '../data';
 import LinkCard from '../components/LinkCard';
+import {useTheme} from "next-themes";
 const links = () => {
+    const {systemTheme , theme, setTheme} = useTheme ();
+    const [initialThemeLoaded, setInitialThemeLoaded] = useState(false);
+    useEffect(() => {
+        // Listen for initial theme loaded event
+        setInitialThemeLoaded(true);
+      }, []);
+    const renderLogo = (social) => {
+        const currentTheme = initialThemeLoaded ? (theme === "system" ? systemTheme : theme) : "dark";
+    
+        if (currentTheme === "dark") {
+          return (
+            <Image src={social.darkicon} width={30} height={30}/>
+          );
+        } else {
+          return (
+            <Image src={social.icon} width={30} height={30}/>
+          );
+        }
+      };
     return(
         <>
         <Head>
@@ -26,9 +47,11 @@ const links = () => {
               />
             <div className='font-bold'>{data.links.name}</div>
             <div className=''>{data.links.title}</div>
-            <div className='flex gap-6 items-center mt-2'>
+            <div className='flex gap-8 items-center mt-2'>
                 {data.links.socials.map((social) => (
-                    <a key={Math.random()} href={social.link} target="_blank"><Image src={social.icon} width={30} height={30}/></a>
+                    <a key={Math.random()}  href={social.link} target="_blank" className='hover:cursor-pointer'>
+                        {renderLogo(social)}
+                    </a>
                 ))}
             </div>
             <div className='mt-6 flex flex-col gap-4 w-full max-w-lg'>
