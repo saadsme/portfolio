@@ -45,7 +45,7 @@ const NavBar = ({openProp}) => {
         </div>
         <div className=" animate-fadedown mx-auto md:justify-between md:max-w-4xl md:w-full md:my-12 mb-8 dark:text-gray-100 text-gray-700 md:flex">
             <div className={` text-md flex flex-col md:justify-start md:items-center md:flex-row md:pt-0 space-y-2 md:space-y-0 md:mr-6 absolute md:pl-0 pl-6 transition-all duration-250 md:static  rounded-2xl md:z-auto z-[1000] py-4 md:pb-0
-             dark:bg-white bg-black text-white md:text-black md:bg-white  md:dark:bg-black md:dark:text-white dark:text-black  left-5 right-5 ${open ? 'top-20' : 'top-[-490px]'}`}>
+             dark:bg-white bg-black text-white md:text-black md:bg-white   md:dark:text-white dark:text-black  left-5 right-5 ${open ? 'top-20' : 'top-[-490px]'}`}>
               <Link className="hover:bg-gray-200 border-spacing-1 rounded md:py-1 md:px-2 md:mr-6  hover:text-gray-900 " href={'/'}>Home</Link>
               {/* <Link className="hover:bg-gray-200 border-spacing-1 rounded p-1 px-2 hover:text-gray-900" href={'/projects'}>Projects</Link>
               */}
