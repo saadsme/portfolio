@@ -33,6 +33,7 @@ export default function Tech(){
                     <ul className='ml-5 text-lg space-y-3 text-gray-500 list-disc dark:text-gray-300'>
                         <li>IKEA Malm Desk in Black-brown (140x65cm)</li>
                         <li>MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)</li>
+                        <li>M2 Pro MacBook Pro (14 inch, 16GB, 512GB) </li>
                         <li>BenQ 24inch 1080p Monitor (2475H) </li>
                         <li>Anne Pro 2 Mechanical Keyboard with Brown Switches</li>
                         <li>Sandisk 1TB SSD with Thunderbolt Speed</li>
